@@ -11,21 +11,6 @@
 	min-height: 100vh;
 	background: url('bg.jpg');
 }
-@media only screen and (max-width: 600px) {
-  /* Estilos para pantallas más pequeñas */
-  .card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .content {
-    width: 100%;
-  }
-  .Tit_wiki {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 20px;
-  }
-}
 .Tit_wiki{
 	text-align: center;
 	width: 650px;
@@ -40,6 +25,7 @@
 	font-weight: bold;
 	text-shadow: 4px 4px 5px darkgrey;
 	letter-spacing: 4px;
+	word-break: break-word;
 }
 .texto{
 	font-family: Roboto;
