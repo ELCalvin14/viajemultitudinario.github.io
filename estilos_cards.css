@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+.body{
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: url('bg.jpg');
+}
+.Tit_wiki{
+	text-align: center;
+	width: 650px;
+	height: 100px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	justify-content: center;
+	font-family: 'Merienda', cursive;
+	font-size: 60px;
+	color: white;
+	font-weight: bold;
+	text-shadow: 4px 4px 5px darkgrey;
+	letter-spacing: 4px;
+}
+.texto{
+	font-family: Roboto;
+	font-size: 20px;
+	font-weight: bold;
+}
+.contenedor{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 5px 30px;
+	padding: 20px 30px;
+}
+.contenedor .card{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	border: 2px solid rgba(255, 255, 255, .5);
+	width: 350px;
+	height: 300px;
+	background: transparent;
+	border-radius: 20px;
+	box-shadow: 0 35px 80px rgba(0,0,0,0.15);
+	transition: 0.5s;
+	backdrop-filter: blur(15px);
+}
+.contenedor .card:hover{
+	height: 400px;
+}
+.contenedor .card .imgBx{
+	position: absolute;
+	top: 20px;
+	width: 300px;
+	height: 220px;
+	background: #333;
+	border-radius: 12px;
+	overflow: hidden;
+	transition: 0.5s;
+}
+.contenedor .card:hover .imgBx{
+	top: -100px;
+	scale: 0.75;
+	box-shadow: 0 15px 45px rgba(0,0,0,0.2);
+}
+.contenedor .card .imgBx img{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.contenedor .card .content{
+	position: absolute;
+	top: 250px;
+	width: 100%;
+	padding: 0 30px;
+	text-align: center;
+	height: 30px;
+	overflow: hidden;
+	transition: 0.5s;
+	color: white;
+}
+.contenedor .card:hover .content{
+	top:130px;
+	height: 250px;
+}
+.contenedor .card:hover .content a{
+	top: 10px;
+	display: inline-block;
+	padding: 12px 25px;
+	color: #fff;
+	background: #00bcd4;
+	border-radius: 10px;
+	text-decoration: none;
+}
